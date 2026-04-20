@@ -1,7 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "",
-  "outputDirectory": "",
   "crons": [
     {
       "path": "/api/cron",
@@ -10,7 +8,6 @@
   ],
   "functions": {
     "api/cron.py": {
-      "runtime": "python3.12",
       "maxDuration": 60
     }
   }
