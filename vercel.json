@@ -5,10 +5,5 @@
       "path": "/api/cron",
       "schedule": "30 4 * * *"
     }
-  ],
-  "functions": {
-    "api/cron.py": {
-      "maxDuration": 60
-    }
-  }
+  ]
 }

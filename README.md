@@ -8,7 +8,7 @@ the current IST date and a team roster stored in Google Sheets.
 ## Architecture
 
 ```
-api/cron.py        ← Vercel serverless function (HTTP handler)
+api/index.py       ← Vercel serverless function (FastAPI app)
 automation.py      ← Core business logic (imported by both cron and local runner)
 Slack_Automation.py ← Local runner for development
 vercel.json        ← Cron schedule + function config
@@ -68,7 +68,7 @@ python Slack_Automation.py
 | File | Purpose |
 |---|---|
 | `automation.py` | Core business logic |
-| `api/cron.py` | Vercel serverless cron entrypoint |
+| `api/index.py` | Vercel serverless cron entrypoint (FastAPI) |
 | `Slack_Automation.py` | Local development runner |
 | `Workflow_comments.py` | Workflow documentation (not executed) |
 | `vercel.json` | Cron schedule and function configuration |
